@@ -1,6 +1,5 @@
 function mydate() {
     var event = prompt("Please enter the name of the event", "disco party");
-    console.log(typeof(event));
     var name = "Emma", place = "Lviv";
     var time = new Date();
     var myDate = time.getHours() + 2;
