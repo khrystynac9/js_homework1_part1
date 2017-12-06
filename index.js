@@ -4,6 +4,13 @@ function mydate() {
     var time = new Date();
     var myDate = time.getHours() + 2;
     var myMinutes = time.getMinutes();
-    console.log((name + " has a " + event + " at " + myDate + ":" + myMinutes + " in " + place + " today!!!"));
+    var a = parseInt(event);
+    if (isNaN(a)) {
+        console.log((name + " has a " + event + " at " + myDate + ":" + myMinutes + " in " + place + " today!!!"));
+    } else {
+        alert("please enter a string not a number");
+        mydate();
+    }
+   
 }
 mydate();
